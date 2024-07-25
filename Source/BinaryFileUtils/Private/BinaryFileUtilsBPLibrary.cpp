@@ -9,3 +9,8 @@ TArray<uint8> UBinaryFileUtilsBPLibrary::LoadFile(const FString& FilePath) {
 	FFileHelper::LoadFileToArray(/*out*/ ByteArray, *FilePath);
 	return ByteArray;
 }
+
+void UBinaryFileUtilsBPLibrary::SaveFile(const FString&      FilePath,
+                                         const TArray<uint8> Data) {
+	FFileHelper::SaveArrayToFile(Data, *FilePath);
+}
