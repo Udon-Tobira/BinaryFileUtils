@@ -17,5 +17,5 @@ class UBinaryFileUtilsBPLibrary: public UBlueprintFunctionLibrary {
 	static TArray<uint8> LoadFile(const FString& FilePath);
 
 	UFUNCTION(BlueprintCallable)
-	static void SaveFile(const FString& FilePath, const TArray<uint8> Data);
+	static void SaveFile(const FString& FilePath, const TArray<uint8>& Data);
 };
