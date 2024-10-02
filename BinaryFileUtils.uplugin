@@ -2,15 +2,15 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"FriendlyName": "BinaryFileUtils",
+	"FriendlyName": "Binary File Utils",
 	"Description": "Binary file utility",
-	"Category": "Other",
+	"Category": "Blueprints",
 	"CreatedBy": "Udon-Tobira",
 	"CreatedByURL": "",
 	"DocsURL": "",
-	"MarketplaceURL": "",
+	"FabURL": "com.epicgames.launcher://ue/Fab/product/",
 	"SupportURL": "",
-	"CanContainContent": true,
+	"CanContainContent": false,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
@@ -18,7 +18,10 @@
 		{
 			"Name": "BinaryFileUtils",
 			"Type": "Runtime",
-			"LoadingPhase": "PreLoadingScreen"
+			"LoadingPhase": "PreLoadingScreen",
+			"PlatformAllowList": [
+				"Win64"
+			]
 		}
 	]
 }
